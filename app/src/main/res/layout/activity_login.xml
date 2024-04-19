@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/selected"
+    tools:context=".LoginActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:layout_marginHorizontal="4dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/patientLoginId"
+            android:layout_width="match_parent"
+            android:height="48dp"
+            android:textColor="@color/black"
+            android:elevation="3dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:backgroundTint="@color/back1"
+
+            android:paddingHorizontal="25dp"
+            android:maxLength="10"
+            android:paddingVertical="15dp"
+            android:inputType="text"
+            android:hint="Login Id"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
+            android:ems="10"
+            />
+        <EditText
+            android:id="@+id/patientLoginPassword"
+            android:layout_width="match_parent"
+            android:height="48dp"
+            android:textColor="@color/black"
+            android:elevation="3dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="3dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:backgroundTint="@color/back1"
+
+            android:paddingHorizontal="25dp"
+            android:maxLength="10"
+            android:paddingVertical="15dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:background="@color/white"
+            android:ems="10"
+            />
+
+
+
+
+        <Button
+            android:id="@+id/logInPatientBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Log In"
+            android:textSize="22sp"
+            android:backgroundTint="@color/buttonin"
+            android:textColor="@color/white"
+            android:padding="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Already Have an account?"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/signUpPatientOption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:text="Sign Up"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
